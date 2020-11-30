@@ -2,6 +2,7 @@ import React from 'react';
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import * as IoIcons from "react-icons/io";
+import * as RiIcons from "react-icons/ri";
 
 
 export const SidebarData = [
@@ -9,36 +10,78 @@ export const SidebarData = [
         title: 'Home',
         path: '/home2',
         icon: <AiIcons.AiFillHome />,
-        cName: 'nav-text'
+        iconClosed: <RiIcons.RiArrowDownSFill />,
+        iconOpened: <RiIcons.RiArrowUpSFill />,
+        subNav: [
+            {
+                title: 'Users',
+                path: '/home2/user',
+                icon: <AiIcons.AiFillHome />,  
+            },
+            {
+                title: 'Revenue',
+                path: '/home2/revenue',
+                icon: <AiIcons.AiFillHome />,  
+            },
+        ]   
     },
     {
         title: 'Reports',
         path: '/reports',
         icon: <IoIcons.IoIosPaper />,
-        cName: 'nav-text'
+        iconClosed: <RiIcons.RiArrowDownSFill />,
+        iconOpened: <RiIcons.RiArrowUpSFill />,
+        subNav: [
+            {
+                title: 'Reports',
+                path: '/reports/reports1',
+                icon: <IoIcons.IoIosPaper />,  
+            },
+            {
+                title: 'Reports 2',
+                path: '/reports/reports2',
+                icon: <IoIcons.IoIosPaper />,    
+            },
+            {
+                title: 'Reports 3',
+                path: '/reports/reports3',
+                icon: <IoIcons.IoIosPaper />,    
+            },
+        ]   
     },
     {
         title: 'Products',
         path: '/products',
         icon: <FaIcons.FaCartPlus />,
-        cName: 'nav-text'
     },
     {
         title: 'Team',
         path: '/team',
-        icon: <IoIcons.IoMdPeople/>,
-        cName: 'nav-text'
+        icon: <IoIcons.IoMdPeople />,
     },
     {
         title: 'Messages',
         path: '/messages',
         icon: <FaIcons.FaEnvelopeOpenText />,
-        cName: 'nav-text'
+        iconClosed: <RiIcons.RiArrowDownSFill />,
+        iconOpened: <RiIcons.RiArrowUpSFill />,
+        subNav: [
+            {
+                title: 'Messages 1',
+                path: '/messages/message1',
+                icon: <IoIcons.IoIosPaper />,  
+            },
+            {
+                title: 'Messages 2',
+                path: '/messages/message2',
+                icon: <IoIcons.IoIosPaper />, 
+            }
+        ]
     },
     {
         title: 'Support',
         path: '/support',
-        icon: <IoIcons.IoMdHelpCircle/>,
-        cName: 'nav-text'
+        icon: <IoIcons.IoMdHelpCircle />,
     },
+
 ]

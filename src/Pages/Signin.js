@@ -13,7 +13,7 @@ const SigninPage = () => {
 
   <Switch>
   <Route path="/siginin" component={SignIn} exact />
-  <Route path="/dashboard" component={Dashboard}  />
+  <Route path="/dashboard" exact component={Dashboard}  />
   </Switch>
   
   </Router>
